@@ -14,14 +14,14 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="training/components/container"
                 layout="responsiveGrid">
+                <hero
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="training/components/hero"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="training/components/container"
                     editable="{Boolean}true"
                     layout="responsiveGrid">
-                    <hero
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="training/components/hero"/>
                 </container>
             </container>
             <experiencefragment-footer

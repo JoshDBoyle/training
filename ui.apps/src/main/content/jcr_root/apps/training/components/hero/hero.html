@@ -2,13 +2,15 @@
     <sly data-sly-call="${clientlib.css @ categories='training.hero'}"/>
 </sly>
 
-<section data-sly-use.commonsTemplates="core/wcm/components/commons/v1/templates.html" id="header">
+<section
+    data-sly-use.commonsTemplates="core/wcm/components/commons/v1/templates.html" id="header"
+    data-sly-use.model="com.accenture.core.models.HeroModel">
     <div class="inner">
-        <span class="icon solid major fa-cloud"></span>
-        <h1>This is the title text</h1>
-        <p>This is the descriptive text</p>
+        <span class="icon solid major ${model.icon || 'fa-cloud'}"></span>
+        <h1>${model.title}</h1>
+        <p>${model.description}</p>
         <ul class="actions special">
-            <li><a href="#one" class="button scrolly">Button</a></li>
+            <li><a href="#one" class="button scrolly">${model.buttonText}</a></li>
         </ul>
     </div>
 </section>

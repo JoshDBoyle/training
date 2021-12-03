@@ -10,14 +10,14 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="training/components/container"
             layout="responsiveGrid">
+            <hero
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/hero"
+                editable="{Boolean}true"/>
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="training/components/container"
                 layout="responsiveGrid">
-                <hero
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="training/components/hero"
-                    editable="{Boolean}true"/>
                 <container
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="training/components/container"

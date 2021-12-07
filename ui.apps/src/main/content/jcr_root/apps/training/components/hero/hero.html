@@ -1,8 +1,8 @@
 
 
 
-
-<section data-sly-use.model="com.accenture.core.models.HeroModel" id="header">
+<section data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+         data-sly-use.model="com.accenture.core.models.HeroModel" id="header">
 <div class="inner">
         <span data-sly-attribute.class="icon solid major ${model.iconCode}"></span>
         <h1>${model.title}</h1>
@@ -13,4 +13,4 @@
     </div>
 </section>
 
-<sly data-sly-call="${commonsTemplates.placeholder @ isEmpty = !hasContent}"></sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !hasContent}"></sly>

@@ -1,6 +1,0 @@
-#base=js
-vendor/breakpoints.min.js
-vendor/browser.min.js
-vendor/jquery.min.js
-vendor/jquery.scrolly.min.js
-main.js

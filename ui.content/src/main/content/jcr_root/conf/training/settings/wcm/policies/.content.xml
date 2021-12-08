@@ -5,6 +5,18 @@
     <rep:policy/>
     <training jcr:primaryType="nt:unstructured">
         <components jcr:primaryType="nt:unstructured">
+            <textAndImage jcr:primaryType="nt:unstructured">
+                <policy_1638982717634
+                        jcr:lastModified="{Date}2021-12-08T12:08:02.415-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Text and Image No Pretitle"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        pretitleHidden="true"
+                        showTitleType="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1638982717634>
+            </textAndImage>
             <form jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
                     <form-container

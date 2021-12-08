@@ -4,6 +4,7 @@
 @import '../components/**/*.scss';
 @import './styles/**/*.scss';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -3517,4 +3518,32 @@ main.container {
 footer.experiencefragment {
   padding: 0 0 0 0;
   border-top: none;
+}
+
+#teaser-section {
+  text-align: center;
+  margin-left: 21%;
+  margin-right: 21%;
+  margin-bottom: 30px;
+  hr {
+    margin-left: 42%;
+    margin-right: 42%;
+    margin-top: 0;
+  }
+  .teaser {
+    padding: 20px;
+    .cmp-teaser__image {
+      margin-bottom: 20px;
+    }
+    .cmp-teaser__title-link {
+      border: none;
+      font-size: 32px;
+      line-height: 1.5em;
+    }
+    .cmp-teaser__action-link {
+      padding: 10px 20px;
+      text-decoration: none;
+      box-shadow: inset 0 0 0 1px rgb(144 144 144 / 50%);
+    }
+  }
 }

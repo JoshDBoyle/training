@@ -1,0 +1,38 @@
+.zoNav {
+  background-color: #666666;
+
+  .cmp-navigation {
+
+    .cmp-navigation__group {
+
+      width: 80%;
+
+      .cmp-navigation__item {
+
+        display: inline;
+        width: 80px;
+        text-align: center;
+        float: right;
+        border-left: 1px solid #bbb;
+
+        .cmp-navigation__item-link {
+          color: #E8E8E8;
+
+        }
+
+      }
+
+
+
+    }
+
+
+  }
+
+
+  @media (max-width: 767px) {
+    .cmp-teaser {
+      display: block;
+    }
+  }
+}

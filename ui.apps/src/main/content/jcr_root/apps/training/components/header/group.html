@@ -1,0 +1,8 @@
+<template data-sly-template.group="${@ items='The navigation items for the current level'}" data-sly-use.itemTemplate="item.html">
+
+    <h1>The Beach</h1>
+
+    <ul class="cmp-navigation__group" data-sly-list="${items}">
+        <sly data-sly-call="${itemTemplate.item @ item=item}"></sly>
+    </ul>
+</template>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/training" mode="update"/>
+    <filter root="/conf/training" mode="merge"/>
     <filter root="/content/training" mode="update"/>
     <filter root="/content/dam/training/asset.jpg"/>
     <filter root="/content/experience-fragments/training"/>

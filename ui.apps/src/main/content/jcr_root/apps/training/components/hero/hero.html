@@ -2,9 +2,11 @@
 
 
 <section data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-         data-sly-use.model="com.accenture.core.models.HeroModel" id="header">
+         data-sly-use.model="com.accenture.core.models.HeroModel" id="header"
+         style="background-image: url('/apps/training/clientlibs/clientlib-site/resources/images/beachHero.jpg');background-attachment: initial; background-position: bottom center;background-size: cover;background-repeat: no-repeat;">
 <div class="inner">
         <span data-sly-attribute.class="icon solid major ${model.iconCode}"></span>
+
         <h1>${model.title}</h1>
         <p>${model.description}</p>
         <ul class="actions special">

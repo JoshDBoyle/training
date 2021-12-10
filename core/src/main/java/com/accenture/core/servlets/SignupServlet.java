@@ -31,8 +31,8 @@ import com.google.gson.JsonObject;
 public class SignupServlet extends SlingAllMethodsServlet {
     private static final long serialVersionUID = 1L;
 
-//    @Reference
-//    private SignupService sus;
+    @Reference
+    private SignupService sus;
 
     @Override
     protected void doPost(final SlingHttpServletRequest request, final SlingHttpServletResponse response) throws ServletException, IOException {
@@ -48,7 +48,7 @@ public class SignupServlet extends SlingAllMethodsServlet {
 
             ResourceUtil.getOrCreateResource(
                     request.getResourceResolver(),
-                    "/content/usergenerated/signup",
+                    sus.getPath(),
                     props,
                     "nt:unstructured",
                     true);
@@ -65,8 +65,8 @@ public class SignupServlet extends SlingAllMethodsServlet {
         response.setContentType("application/json");
         JsonObject jsonResponse = new JsonObject();
 
-        jsonResponse.addProperty("title", "Marc");
-        jsonResponse.addProperty("description", datetime);
+        jsonResponse.addProperty("title", sus.getSuccessTitle());
+        jsonResponse.addProperty("description", sus.getSuccessDescription());
         response.getWriter().write(jsonResponse.toString());
 
 

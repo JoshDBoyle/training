@@ -1,0 +1,24 @@
+
+
+
+<section data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+         data-sly-use.model="com.accenture.core.models.AdventureMapModel" class="adMap"
+        >
+<div clas="col-6 col-12-medium">
+        <h3>${model.title}</h3>
+
+
+        <ul class="major-icons">
+            <li><span data-sly-attribute.class="icon solid style1 major ${model.iconA1}"></span></li>
+            <li><span data-sly-attribute.class="icon solid style2 major ${model.iconA2}"></span></li>
+            <li><span data-sly-attribute.class="icon solid style3 major ${model.iconA3}"></span></li>
+            <li><span data-sly-attribute.class="icon solid style4 major ${model.iconB1}"></span></li>
+            <li><span data-sly-attribute.class="icon solid style5 major ${model.iconB2}"></span></li>
+            <li><span data-sly-attribute.class="icon solid style6 major ${model.iconB3}"></span></li>
+
+        </ul>
+
+    </div>
+</section>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = !hasContent}"></sly>

@@ -39,7 +39,7 @@ public class SignupServlet extends SlingAllMethodsServlet {
         String datetime = Calendar.getInstance().getTime().toString();
 
 
-        if (null == request.getResourceResolver().getResource("/content/usergenerated/signup")) {
+        if (null == request.getResourceResolver().getResource(sus.getPath())) {
             Map<String, Object> props = new HashMap<>();
 
 
@@ -53,9 +53,8 @@ public class SignupServlet extends SlingAllMethodsServlet {
                     "nt:unstructured",
                     true);
 
-
         } else {
-            ModifiableValueMap mvm = request.getResourceResolver().getResource("/content/usergenerated/signup").adaptTo(ModifiableValueMap.class);
+            ModifiableValueMap mvm = request.getResourceResolver().getResource(sus.getPath()).adaptTo(ModifiableValueMap.class);
             if (null != mvm) {
                 mvm.put("signupdate", datetime);
                 request.getResourceResolver().commit();
@@ -70,13 +69,10 @@ public class SignupServlet extends SlingAllMethodsServlet {
         response.getWriter().write(jsonResponse.toString());
 
 
-
         // response.setContentType("text/plain");
         // response.getWriter().write(datetime);
-
-//        response.getWriter().write(String.valueOf(jsonResponse));
+        // response.getWriter().write(String.valueOf(jsonResponse));
 
     }
-
 
 }

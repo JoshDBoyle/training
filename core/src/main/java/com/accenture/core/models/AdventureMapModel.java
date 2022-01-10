@@ -1,16 +1,27 @@
 package com.accenture.core.models;
 
+import com.adobe.cq.wcm.core.components.models.Teaser;
+import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.apache.sling.models.annotations.injectorspecific.Self;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+import org.apache.sling.models.factory.ModelFactory;
+import com.adobe.cq.wcm.core.components.models.Image;
 
 import java.util.List;
 
-
-@Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Model(adaptables = SlingHttpServletRequest.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL, resourceType = "training/components/adventureMap")
 public class AdventureMapModel {
+
+    @Self
+    private SlingHttpServletRequest request;
+
+    @OSGiService
+    private ModelFactory modelFactory;
 
     @ValueMapValue
     private String title;

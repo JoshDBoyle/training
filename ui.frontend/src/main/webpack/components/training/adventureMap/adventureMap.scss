@@ -1,7 +1,23 @@
 .adMap {
 
-  background-color: #9dc66b;
-  color: brown;
+  background: linear-gradient(42deg, rgba(2,0,36,1) 22%, rgba(9,9,121,1) 57%, rgba(0,212,255,1) 100%);
+
+  div {
+
+    h3 {
+      text-align: center;
+      font-size: 80px;
+      padding-top: 20px;
+      font-family: 'Yellowtail', cursive;
+      font-weight: bolder;
+      color: #ffffff;
+
+    }
+
+
+
+  }
+
 
 
 }

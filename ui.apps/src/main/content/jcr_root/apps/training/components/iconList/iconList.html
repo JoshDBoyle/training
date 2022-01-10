@@ -1,0 +1,17 @@
+<section data-sly-use.model="com.accenture.core.models.IconListModel" id="iconListSection" class="main style2">
+    <div class="container">
+        <div class="row gtr-150 wrapper">
+            <div class="col-6 col-12-medium icons">
+                <ul class="major-icons" data-sly-list.icon="${model.icons}">
+                    <li><span class="icon solid style1 major ${icon}"></span></li>
+                </ul>
+            </div>
+            <div class="col-6 col-12-medium">
+                <header class="major">
+                    <h2>${model.title}</h2>
+                </header>
+                <p>${model.description}</p>
+            </div>
+        </div>
+    </div>
+</section>

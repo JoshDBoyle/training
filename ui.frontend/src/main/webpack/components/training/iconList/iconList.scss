@@ -1,0 +1,13 @@
+.iconList {
+  #iconListSection {
+    padding: 70px 15%;
+  }
+
+  .wrapper {
+    display: flex
+  }
+
+  &.right .wrapper .icons {
+    order: 1;
+  }
+}

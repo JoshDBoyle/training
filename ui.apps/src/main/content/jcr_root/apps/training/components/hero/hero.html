@@ -1,18 +1,17 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='training.hero'}"/>
+</sly>
 
-
-
-<section data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
-         data-sly-use.model="com.accenture.core.models.HeroModel" id="header"
-         style="background-image: url('/apps/training/clientlibs/clientlib-site/resources/images/beachHero.jpg');background-attachment: initial; background-position: bottom center;background-size: cover;background-repeat: no-repeat;">
-<div class="inner">
-        <span data-sly-attribute.class="icon solid major ${model.iconCode}"></span>
-
-        <h1>${model.title}</h1>
-        <p>${model.description}</p>
+<section data-sly-use.commonsTemplates="core/wcm/components/commons/v1/templates.html" id="header">
+    <div class="inner">
+        <span class="icon solid major fa-cloud"></span>
+        <h1>This is the title text</h1>
+        <p>This is the descriptive text</p>
         <ul class="actions special">
-            <li><a href="#one" class="button scrolly">${model.buttonText}</a></li>
+            <li><a href="#one" class="button scrolly">Button</a></li>
         </ul>
     </div>
 </section>
 
-<sly data-sly-call="${templates.placeholder @ isEmpty = !hasContent}"></sly>
+<sly data-sly-call="${commonsTemplates.placeholder @ isEmpty = !hasContent}"></sly>
+<sly data-sly-call="${clientlib.js @ categories='training.hero'}"/>

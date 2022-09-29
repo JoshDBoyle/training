@@ -1,3 +1,0 @@
-#base=css
-vendor/fontawesome-all.min.css
-main.css

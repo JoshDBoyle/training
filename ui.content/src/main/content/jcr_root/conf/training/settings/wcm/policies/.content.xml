@@ -17,6 +17,20 @@
                     </form-container>
                 </container>
             </form>
+            <textAndImage jcr:primaryType="nt:unstructured">
+                <policy_1664431867057
+                        jcr:lastModified="{Date}2022-09-29T02:11:26.368-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Text and Image No Pretitle"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        allowedHeadingElements="[h1,h2,h3,h4,h5,h6]"
+                        pretitleHidden="true"
+                        showTitleType="false"
+                        titleType="h2">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1664431867057>
+            </textAndImage>
             <languagenavigation jcr:primaryType="nt:unstructured">
                 <policy_xfm
                     jcr:primaryType="nt:unstructured"
